@@ -27,6 +27,11 @@ public class Main {
         mySuitcase.returnItem();
         mySuitcase.returnItem();
 
+        Car myCar = new Car();
+        myCar.move();
+        Vehicle myBoat = new Boat();
+        myBoat.move();
+
     }
  /*   static void logIn(String pass, String user){
         *//* INSTRUCTIONS *//*
