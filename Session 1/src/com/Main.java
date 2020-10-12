@@ -9,7 +9,7 @@ public class Main {
         //String userName = "bob";
         //String password = "pass";
 
-        Login myLogin = new Login();
+/*        Login myLogin = new Login();
         myLogin.userName = "steve";
         myLogin.password = "pass";
         myLogin.login();
@@ -30,7 +30,20 @@ public class Main {
         Car myCar = new Car();
         myCar.move();
         Vehicle myBoat = new Boat();
-        myBoat.move();
+        myBoat.move();*/
+/*
+        MoveableClass myMoveableClass = new MoveableClass();
+        myMoveableClass.move();
+        myMoveableClass.move(2, 2);
+
+        OverrideClass myOverrideClass = new OverrideClass();
+        myOverrideClass.move();
+        MoveableClass myMoveableClass2 = new MoveableClass();*/
+
+         Circle myCircle = new Circle();
+         myCircle.draw();
+         Square mySquare = new Square();
+         mySquare.draw();
 
     }
  /*   static void logIn(String pass, String user){
