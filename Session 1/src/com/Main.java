@@ -45,6 +45,8 @@ public class Main {
          Square mySquare = new Square();
          mySquare.draw();
 
+         MotorBike myMotorBike = new MotorBike();
+
     }
  /*   static void logIn(String pass, String user){
         *//* INSTRUCTIONS *//*
