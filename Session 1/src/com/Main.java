@@ -1,6 +1,10 @@
 package com;
 
 
+import Interface_exercise.Mouse;
+import Interface_exercise.Owl;
+import Static_exercise.MobileDevice;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -40,12 +44,29 @@ public class Main {
         myOverrideClass.move();
         MoveableClass myMoveableClass2 = new MoveableClass();*/
 
-         Circle myCircle = new Circle();
+/*         Circle myCircle = new Circle();
          myCircle.draw();
          Square mySquare = new Square();
          mySquare.draw();
 
-         MotorBike myMotorBike = new MotorBike();
+         MotorBike myMotorBike = new MotorBike();*/
+/*        Mouse MyMouse = new Mouse();
+        MyMouse.makeSound();
+
+        Owl MyOwl = new Owl();
+        MyOwl.makeSound();
+        MyOwl.Fly();*/
+        MobileDevice.maxVolume();
+        MobileDevice.halfVolume();
+
+
+
+
+
+
+
+
+
 
     }
  /*   static void logIn(String pass, String user){
