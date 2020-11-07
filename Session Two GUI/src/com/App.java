@@ -37,8 +37,15 @@ public class App extends JFrame {
     }
 
     public static void main(String[] args){
+/*
 
         App page = new App();
+        page.setVisible(true);
+*/
+/*      Distances exDistances = new Distances("Distances");
+        exDistances.setVisible(true);*/
+
+        Temperature page = new Temperature("Celsius to Fahrenheit Conversion");
         page.setVisible(true);
     }
 }
