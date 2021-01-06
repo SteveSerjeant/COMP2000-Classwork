@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dbdcf9de-3127-454e-95e0-4cf486a751be" name="Default Changelist" comment="" />
+    <list default="true" id="93a9d9f4-3c7f-42ee-b10e-b7d85f143510" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/SE_Four/resources/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SE_Four/src/com/TwoPanels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SE_Four/src/com/mainPanel.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SE_Four/src/com/mainPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SE_GUI/resources/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SE_GUI/src/com/TwoPanels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SE_GUI/src/com/testGUI.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SE_GUI/src/com/testGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SE_Three/resources/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SE_Three/src/com/TwoPanels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,39 +23,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.2\plugins\maven\lib\maven3" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1iT4NaYuCTjx4Gbfoja7RbVEYxL" />
+  <component name="ProjectId" id="1lhT6bMxaZ0TV6cCpQnCA4VBb3q" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dbdcf9de-3127-454e-95e0-4cf486a751be" name="Default Changelist" comment="" />
-      <created>1601918210253</created>
+      <changelist id="93a9d9f4-3c7f-42ee-b10e-b7d85f143510" name="Default Changelist" comment="" />
+      <created>1608048157988</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1601918210253</updated>
+      <updated>1608048157988</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="440" y="94" key="#Project_Structure" timestamp="1601918255296">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1601918255296" />
   </component>
 </project>
