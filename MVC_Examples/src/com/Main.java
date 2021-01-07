@@ -6,6 +6,8 @@ import com.mvc3.Model.*;
 import com.mvc3.View.*;
 import com.mvc3.Controller.*;
 
+import java.lang.reflect.Method;
+
 public class Main {
 
     public static void main (String[] args){
@@ -24,6 +26,35 @@ public class Main {
 
         /*  level 3 */
         IModelSubject model = new ModelSubject();
+        model.setData("Bob Bobbington");
+
+//            String data = model.getData();
+//
+//        try {
+//
+//            System.out.println(model.getClass());
+//
+//                Method getData = model.getClass().getMethod("getData");
+//                Object value = getData.invoke(model);
+//
+//                System.out.println(value.toString());
+//
+//            Method[] methods = model.getClass().getDeclaredMethods();
+//
+//            for (Method method : methods){
+//                System.out.println(method.getName());
+//            }
+//            String propertyName = "Description";
+//
+//            Method method = model.getClass().getMethod("get" + propertyName);
+//            //Object value = method.invoke(model);
+//
+//            System.out.println(value);
+//        }
+//        catch(Exception ex){
+//
+//            ex.printStackTrace();
+//        }
 
         IControllerStrategy settingsController = new ControllerStrategy(model, new ViewUserSettings());
 

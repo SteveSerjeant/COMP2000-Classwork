@@ -31,11 +31,13 @@ public class ViewUserDisplay extends JFrame implements IViewComposite {
         this.setVisible(true);
     }
 
+    @Override
     public void setController(IControllerStrategy controller){
 
         this.controller = controller;
     }
 
+    @Override
     public void display(String data){
 
         viewLbl.setText(data);

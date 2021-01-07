@@ -18,11 +18,13 @@ public class ControllerStrategy implements IControllerStrategy, IModelObserver {
         this.viewComposite.setController(this);
     }
 
+    @Override
     public void update(String data){
 
         viewComposite.display(data);
     }
 
+    @Override
     public void setData(String data){
 
         modelSubject.setData(data);

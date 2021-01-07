@@ -6,4 +6,5 @@ public interface IModelSubject {
     void remove (IModelObserver observer);
     void updateObservers();
     void setData(String data);
+
 }
