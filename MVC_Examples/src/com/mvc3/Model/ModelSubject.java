@@ -5,15 +5,17 @@ public class ModelSubject implements IModelSubject{
 
     private String data;
 
-    private String description = "Model Description.....";
-
-    public  String getDescription(){
-        return description;
-    }
-
-    public void setDescription(String description){
-        this.description = description;
-    }
+//    private String description = "Model Description.....";
+//
+//    public  String getDescription(){
+//
+//        return description;
+//    }
+//
+//    public void setDescription(String description){
+//
+//        this.description = description;
+//    }
     private final ArrayList<IModelObserver> observers = new ArrayList<>();
 
     public String getData(){

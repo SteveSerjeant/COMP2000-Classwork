@@ -2,9 +2,13 @@ package com;
 
 //import com.mvc1.*;
 //import com.mvc2.*;
-import com.mvc3.Model.*;
-import com.mvc3.View.*;
-import com.mvc3.Controller.*;
+//import com.mvc3.Model.*;
+//import com.mvc3.View.*;
+//import com.mvc3.Controller.*;
+
+import com.mvc4.controller.AbstractController;
+import com.mvc4.controller.ControllerStrategy;
+import com.mvc4.view.AbstractView;
 
 import java.lang.reflect.Method;
 
@@ -25,29 +29,29 @@ public class Main {
 //        Controller displayController = new Controller(model, displayView);
 
         /*  level 3 */
-        IModelSubject model = new ModelSubject();
-        model.setData("Bob Bobbington");
-
-//            String data = model.getData();
+//        IModelSubject model = new ModelSubject();
+//        model.setData("Bob Bobbington");
+//
+////            String data = model.getData();
 //
 //        try {
 //
-//            System.out.println(model.getClass());
-//
-//                Method getData = model.getClass().getMethod("getData");
-//                Object value = getData.invoke(model);
-//
-//                System.out.println(value.toString());
-//
-//            Method[] methods = model.getClass().getDeclaredMethods();
-//
-//            for (Method method : methods){
-//                System.out.println(method.getName());
-//            }
+////            System.out.println(model.getClass());
+////
+////                Method getData = model.getClass().getMethod("getData");
+////                Object value = getData.invoke(model);
+////
+////                System.out.println(value.toString());
+////
+////            Method[] methods = model.getClass().getDeclaredMethods();
+////
+////            for (Method method : methods){
+////                System.out.println(method.getName());
+////            }
 //            String propertyName = "Description";
 //
 //            Method method = model.getClass().getMethod("get" + propertyName);
-//            //Object value = method.invoke(model);
+//            Object value = method.invoke(model);
 //
 //            System.out.println(value);
 //        }
@@ -55,9 +59,23 @@ public class Main {
 //
 //            ex.printStackTrace();
 //        }
+//
+//        IControllerStrategy settingsController = new ControllerStrategy(model, new ViewUserSettings());
+//
+//        IControllerStrategy displayController = new ControllerStrategy(model, new ViewUserDisplay());
 
-        IControllerStrategy settingsController = new ControllerStrategy(model, new ViewUserSettings());
+        /* level 4 */
 
-        IControllerStrategy displayController = new ControllerStrategy(model, new ViewUserDisplay());
+//        ModelSubject model = new ModelSubject();
+//
+//        AbstractView editorView = new ViewEditor();
+//        AbstractController controller = new ControllerStrategy(model, editorView);
+//
+//        AbstractView characterView = new ViewCharacterDetails();
+//        AbstractController controller2 = new ControllerStrategy(model, characterView);
+
+        AbstractView viewAll = new viewAll();
+        AbstractController controller3 = new ControllerStrategy(model, viewAll);
+
     }
 }
