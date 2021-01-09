@@ -11,7 +11,7 @@ public abstract class AbstractController {
     public static final String RUN_SPEED = "RunSpeed";
     public static final String JUMP_HEIGHT = "JumpHeight";
 
-    public abstract void setModelProperty(KeyValuepair data);
+    public abstract void setModelProperty(KeyValuePair data);
     public abstract void updateView (KeyValuePair data);
 
     public void swapModel(int index) { }

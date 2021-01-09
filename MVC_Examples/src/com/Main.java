@@ -6,9 +6,9 @@ package com;
 //import com.mvc3.View.*;
 //import com.mvc3.Controller.*;
 
-import com.mvc4.controller.AbstractController;
-import com.mvc4.controller.ControllerStrategy;
-import com.mvc4.view.AbstractView;
+import com.mvc4.controller.*;
+import com.mvc4.model.*;
+import com.mvc4.view.*;
 
 import java.lang.reflect.Method;
 
@@ -66,16 +66,44 @@ public class Main {
 
         /* level 4 */
 
-//        ModelSubject model = new ModelSubject();
-//
-//        AbstractView editorView = new ViewEditor();
-//        AbstractController controller = new ControllerStrategy(model, editorView);
-//
-//        AbstractView characterView = new ViewCharacterDetails();
-//        AbstractController controller2 = new ControllerStrategy(model, characterView);
+        ModelSubject model = new ModelSubject();
 
-        AbstractView viewAll = new viewAll();
+        AbstractView editorView = new ViewEditor();
+        AbstractController controller = new ControllerStrategy(model, editorView);
+
+        AbstractView characterView = new ViewCharacterDetails();
+        AbstractController controller2 = new ControllerStrategy(model, characterView);
+
+        AbstractView viewAll = new ViewAll();
         AbstractController controller3 = new ControllerStrategy(model, viewAll);
 
+        model.setCharacterName("Fred");
+        model.setHealth(7);
+        model.setArmour(1);
+        model.setWalkSpeed(3.75f);
+        model.setRunSpeed(7.5f);
+        model.setJumpHeight(1.2f);
+
+        /* level 5 */
+        ModelSubject[] models = new ModelSubject[3];
+
+        models[0] = new ModelSubject();
+        models[0].setCharacterName("Steve");
+
+        models[1] = new ModelSubject();
+        models[1].setCharacterName("Pete");
+
+        models[2] = new ModelSubject();
+        models[2].setCharacterName("Dave");
+
+        String[] names = new String[3];
+        for (int i = 0; i < names.length; i++){
+            names[i] = models[i].getCharacterName();
+        }
+
+        App appView = new App();
+        AbstractController controller4 = new MultiModelController(models, appView);
+
+        appView.setupEditorList(names);
     }
 }

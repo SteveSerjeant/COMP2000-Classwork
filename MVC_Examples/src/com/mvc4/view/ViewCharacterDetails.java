@@ -1,6 +1,6 @@
 package com.mvc4.view;
 
-import com.mvc4.KeyValuepair;
+import com.mvc4.KeyValuePair;
 import com.mvc4.controller.AbstractController;
 
 import javax.swing.*;

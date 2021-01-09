@@ -7,5 +7,5 @@ public interface IModelSubject {
 
     void add(AbstractController observer);
     void remove (AbstractController observer);
-    void onPropertyChanged(KeyValuepair data);
+    void onPropertyChanged(KeyValuePair data);
 }

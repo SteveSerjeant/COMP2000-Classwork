@@ -9,7 +9,7 @@ import javax.swing.event.ChangeListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ViewEditor extends AbstractView{
+public class ViewEditor extends AbstractView {
 
     JPanel mainPanel;
     JTextField nameTf;
@@ -27,9 +27,7 @@ public class ViewEditor extends AbstractView{
                 new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        controller.setModelProperty(new KeyValuePair(AbstractController.CHARACTER_NAME,
-                                nameTf.getText()
-                        ));
+                        controller.setModelProperty(new KeyValuePair(AbstractController.CHARACTER_NAME, nameTf.getText()));
                     }
                 }
         );
@@ -39,8 +37,7 @@ public class ViewEditor extends AbstractView{
                     @Override
                     public void stateChanged(ChangeEvent e) {
                         int value = (Integer)healthSpn.getValue();
-                        controller.setModelProperty(new KeyValuePair(AbstractController.HEALTH,
-                                value));
+                        controller.setModelProperty(new KeyValuePair(AbstractController.HEALTH,value));
                     }
                 }
         );
@@ -108,7 +105,7 @@ public class ViewEditor extends AbstractView{
             case AbstractController.CHARACTER_NAME:
                 nameTf.setText(data.value.toString());
                 break;
-            case AbstractContoller.HEALTH: {
+            case AbstractController.HEALTH: {
                 healthSpn.setValue(data.value);
                 break;
             }

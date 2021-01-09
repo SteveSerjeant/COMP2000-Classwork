@@ -1,6 +1,6 @@
 package com.mvc4.controller;
 
-import com.mvc4.KeyValuepair;
+import com.mvc4.KeyValuePair;
 import com.mvc4.model.IModelSubject;
 import com.mvc4.view.AbstractView;
 import java.lang.reflect.Method;

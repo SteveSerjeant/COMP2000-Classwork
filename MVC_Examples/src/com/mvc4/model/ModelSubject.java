@@ -1,7 +1,7 @@
 package com.mvc4.model;
 
-//import com.mvc4.KeyValuePair;
-//import com.mvc4.controller.AbstractController;
+import com.mvc4.KeyValuePair;
+import com.mvc4.controller.AbstractController;
 import java.util.ArrayList;
 
 public class ModelSubject implements IModelSubject{
@@ -56,27 +56,30 @@ public class ModelSubject implements IModelSubject{
         return walkSpeed;
     }
 
-    public void setWalkSpeed(){
+    public void setWalkSpeed(float walkSpeed){
         this.walkSpeed = walkSpeed;
-        onPropertyChanged(new KeyValuePair(AbstractController.WALK_SPEED, this.walkSpeed);
+        onPropertyChanged(new KeyValuePair(AbstractController.WALK_SPEED, this.walkSpeed));
     }
 
     public float getRunSpeed(){
         return runSpeed;
     }
 
-    public void setRunSpeed(){
+    public void setRunSpeed(float runSpeed){
         this.runSpeed = runSpeed;
         onPropertyChanged(new KeyValuePair(AbstractController.RUN_SPEED, this.runSpeed));
     }
 
     public float getJumpHeight(){
+        return jumpHeight;
+    }
+    public void setJumpHeight(float jumpHeight){
         this.jumpHeight = jumpHeight;
         onPropertyChanged(new KeyValuePair(AbstractController.JUMP_HEIGHT, this.jumpHeight));
     }
 
     @Override
-    public void onPropertyChanged(keyValuePair, data){
+    public void onPropertyChanged(KeyValuePair data){
         for (AbstractController observer : observers){
             observer.updateView(data);
         }
