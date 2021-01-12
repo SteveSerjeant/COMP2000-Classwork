@@ -1,0 +1,2 @@
+Steve|55|9999.99|true
+Rose|30|8990.53|false
